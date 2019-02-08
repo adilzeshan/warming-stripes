@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Cinzel"), url("fonts/Cinzel-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Lato"), url("fonts/Lato-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Cinzel", serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #045a8d 0%, #d0d1e6 100%);
+  font-size: 1em;
+}
+
+#masthead a {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+#masthead a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 100%;
+}
+
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section,
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  font-weight: 100;
+}
+
+section a {
+  color: white;
+}
+
+#description p {
+  font-family: "Lato", serif;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.4em;
+}
+
+#social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#social a {
+  color: white;
+}
