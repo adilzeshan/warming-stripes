@@ -81,6 +81,12 @@ section a {
   line-height: 1.4em;
 }
 
+#info {
+  font-family: "Lato", serif;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
 #social {
   list-style: none;
   margin: 0;

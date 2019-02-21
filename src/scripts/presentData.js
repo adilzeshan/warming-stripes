@@ -2,6 +2,7 @@ import * as d3 from "d3";
 import colours from "./colours.js";
 
 function presentData(data, id) {
+  const infoElement = document.getElementById("info");
   const stripeHeight = 400;
   const stripeWidth = 100 / data.length;
   const annualAverages = data.map(year => year.Annual);
@@ -22,7 +23,13 @@ function presentData(data, id) {
     .attr("width", stripeWidth + "%")
     .attr("y", 0)
     .attr("x", (data, index) => index * stripeWidth + "%")
-    .style("fill", data => colours[Math.round(mapToColour(data.Annual))]);
+    .style("fill", data => colours[Math.round(mapToColour(data.Annual))])
+    .on("mouseover", data => {
+      infoElement.innerText = "Year: " + data.Year;
+    })
+    .on("mouseleave", () => {
+      infoElement.innerText = "Hover over a stripe to see the year.";
+    });
 }
 
 export default presentData;
