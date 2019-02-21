@@ -1,5 +1,5 @@
 {
-  "name": "starter-kit",
+  "name": "warming-stripes",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -18,7 +18,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adilzeshan/starter-kit"
+    "url": "https://github.com/adilzeshan/warming-stripes"
+  },
+  "bugs": {
+    "url": "https://github.com/adilzeshan/warming-stripes/issues"
   },
   "keywords": [],
   "author": "Adil Zeshan",
