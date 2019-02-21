@@ -5,6 +5,11 @@ function presentData(data, id) {
   console.log(id, data);
   const stripeHeight = 400;
   const stripeWidth = 100 / data.length;
+  const annualAverages = data.map(year => year.Annual);
+  const mapToColour = d3
+    .scaleLinear()
+    .domain([d3.min(annualAverages), d3.max(annualAverages)])
+    .range([0, colours.length - 1]);
 
   d3.select(id)
     .append("svg")
