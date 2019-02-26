@@ -3,7 +3,9 @@ import processData from "./processData.js";
 import presentData from "./presentData.js";
 
 function loadData(file, id) {
-  d3.csv(file, processData).then(data => presentData(data, id));
+  d3.csv(file, processData)
+    .then(data => presentData(data, id))
+    .catch(error => console.log(error));
 }
 
 export default loadData;
