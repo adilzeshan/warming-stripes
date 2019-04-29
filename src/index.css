@@ -87,15 +87,6 @@ section a {
   line-height: 1.4em;
 }
 
-#social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#social a {
+footer a {
   color: white;
 }
